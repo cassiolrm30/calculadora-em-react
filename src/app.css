@@ -1,0 +1,95 @@
+.screen 
+{ 
+    display: grid;
+    grid-template-rows: 15fr 70fr 15fr;
+    grid-template-columns: 38fr 24fr 38fr;
+    height: 100vh;
+}
+
+.calculator
+{
+    grid-column: 2;
+    grid-row: 2;
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 1em;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(150, 248, 199);
+}
+
+.buttonNumbers
+{
+    display: grid;
+    margin: 1em;
+    place-items: center;
+    width: 3em;
+    height: 3em;
+    border: 1px solid black;
+    border-radius: 5%;
+    color:white;
+    background-color:forestgreen;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttonOperators
+{
+    display: grid;
+    margin: 1em;
+    place-items: center;
+    width: 3em;
+    height: 3em;
+    border: 1px solid black;
+    border-radius: 5%;
+    color:white;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttonCE
+{
+    display: grid;
+    margin: 1em;
+    place-items: center;
+    width: 3em;
+    height: 3em;
+    border: 1px solid black;
+    border-radius: 5%;
+    color:white;
+    background-color: brown;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttonsContainer
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:yellow;
+    border: 1px solid black;
+    border-radius: 0% 0% 5% 5%;
+}
+
+.display
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+    background-color:white;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.disabled { background-color: gainsboro; }
